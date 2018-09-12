@@ -1,0 +1,75 @@
+.type-message {
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    width: 673px;
+    padding: 0 41px;
+    padding-right: 37px;
+    background: none;
+
+}
+
+.type-message input {
+    border: none;
+    background: none;
+    color: #fff;
+    font-family: Karla-Regular;
+    font-size: 30px;
+    width: 592px;
+}
+
+.type-message input::placeholder {
+    color: #fff;
+    font-family: Karla-Regular;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.type-message .send-message {
+    font-family: Karla-Bold;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #fcbab5;
+    float: right;
+    padding-top: 7px;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.type-message .send-message.active {
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .type-message {
+        width: calc(100% - 78px);
+    }
+
+    .type-message input {
+        width: calc(100% - 75px);
+
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .type-message {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        bottom: 20px;
+    }
+
+    .type-message input {
+        width: calc(100% - 75px);
+        font-size: 16px;
+    }
+
+    .type-message input::placeholder {
+        font-size: 18px;
+    }
+
+    .type-message .send-message {
+        font-size: 18px;
+        padding: 0;
+    }
+}

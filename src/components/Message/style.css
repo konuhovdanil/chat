@@ -1,0 +1,77 @@
+.messages {
+    padding: 170px 60px 0 100px;
+    max-height: 925px;
+    height: 925px;
+    overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+.messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #f0f2f5;
+}
+
+.message .text {
+    font-family: Karla-Regular;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000;
+    padding-bottom: 35px;
+}
+
+.message {
+    font-family: Karla-Bold;
+    font-size: 20px;
+    color: #b59390;
+    background: #fff;
+    max-width: calc(100% - 130px);
+    width: fit-content;
+    padding-top: 47px;
+    padding-left: 90px;
+    padding-right: 55px;
+    padding-bottom: 51px;
+    margin-bottom: 90px;
+}
+
+.message.my-message {
+    float: right;
+    margin-right: 41px;
+    padding-right: 89px;
+    padding-left: 51px;
+}
+
+@media screen and (max-width: 767px) {
+    .messages {
+        padding-top: 75px;
+        max-height: calc(100vh - 280px);
+        height: calc(100vh - 280px);
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .messages {
+        padding: 45px 45px 0;
+        height: calc(100vh - 200px);
+        max-height: calc(100vh - 200px);
+    }
+
+    .message {
+        max-width: calc(100% - 97px);
+    }
+
+    .message.my-message {
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .message .text {
+        padding-bottom: 15px;
+    }
+}

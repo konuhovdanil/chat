@@ -1,0 +1,26 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+@font-face {
+    font-family: 'Karla-Bold';
+    src: url("../fonts/Karla-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url("../fonts/Karla-Regular.ttf");
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cbalink {
+    display: none;
+}

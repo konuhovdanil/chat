@@ -1,0 +1,132 @@
+.App {
+    max-width: 750px;
+    width: 750px;
+    height: 1185px;
+    margin: 0 auto;
+    padding-top: 149px;
+    background-repeat: no-repeat;
+}
+
+.App .header {
+    text-align: center;
+    padding-bottom: 176px;
+}
+
+.App .header .logo {
+    padding-bottom: 20px;
+}
+
+.App .header .app-name {
+    font-size: 98px;
+    font-family: Karla-Bold;
+}
+
+.App .auth {
+    padding: 0 60px;
+}
+
+.App .auth .auth-field {
+    padding-bottom: 40px;
+}
+
+.App .auth .input-group {
+    background: #fff;
+    padding: 70px;
+
+}
+
+.App .auth label,
+.App .auth input {
+    display: block;
+}
+
+.App .auth label {
+    font-family: Karla-Bold;
+    font-size: 20px;
+    color: #b49190;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.App .auth input {
+    border: none;
+    border-bottom: 2px solid #7f7f7f;
+    font-family: Karla-Regular;
+    font-size: 28px;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 21px;
+}
+
+.App .auth .get-started {
+    width: auto;
+    background: #ffbdb8;
+    padding: 42px 70px;
+    font-family: Karla-Bold;
+    font-size: 26px;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    pointer-events: none;
+    opacity: .8;
+}
+
+.App .auth .get-started.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.App .get-started .icon {
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .App {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .App {
+        width: 100%;
+        height: 100vh;
+        padding-top: 60px;
+    }
+
+    .App .header {
+        padding-bottom: 35px;
+    }
+
+    .App .header .logo {
+        width: 80px;
+        height: 100px;
+    }
+
+    .App .header .app-name {
+        font-size: 58px;
+    }
+
+    .App .auth {
+        padding: 0 25px;
+    }
+
+    .App .auth label {
+        font-size: 16px;
+    }
+
+    .App .auth input {
+        font-size: 22px;
+        padding-bottom: 30px;
+    }
+
+    .App .auth .input-group {
+        padding: 30px;
+    }
+
+    .App .auth .get-started {
+        padding: 25px;
+        font-size: 20px;
+    }
+}
